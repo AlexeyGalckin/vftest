@@ -4,17 +4,12 @@ namespace vf
 {
 	void test::do_v()
 	{
-		test::payload();
+		test::do_i();
 	}
 	//
 	void test::do_s()
 	{
-		test::payload();
+		test::do_i();
 	}
 	//
-	void test::payload()
-	{
-		int a;
-		a = 0;
-	}
 }

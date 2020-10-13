@@ -14,13 +14,13 @@ namespace vf
 	public:
 		virtual void do_v() override final;
 		//
-		void do_s();
+		__declspec(noinline) void do_s();
 		//
 		void do_i()
 		{
-			payload();
+			++a;
 		}
 	private:
-		static void payload();
+		unsigned long long a = {};
 	};
 }
