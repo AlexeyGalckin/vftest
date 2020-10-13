@@ -1,7 +1,7 @@
 file( GLOB SRC *.cpp )
 file( GLOB HDR *.h )
 #
-add_executable( template_application ${SRC} ${HDR} )
+add_executable( vftest ${SRC} ${HDR} )
 #
-target_link_libraries( template_application PRIVATE template_library )
-#
+add_dependencies( vftest vf )
+target_link_libraries( vftest vf )
