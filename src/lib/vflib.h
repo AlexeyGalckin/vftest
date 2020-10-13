@@ -16,7 +16,7 @@ namespace vf
 		//
 		void do_s();
 		//
-		void dp_i()
+		void do_i()
 		{
 			payload();
 		}

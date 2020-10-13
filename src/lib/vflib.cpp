@@ -14,5 +14,7 @@ namespace vf
 	//
 	void test::payload()
 	{
+		int a;
+		a = 0;
 	}
 }
