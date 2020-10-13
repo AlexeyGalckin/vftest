@@ -14,7 +14,7 @@ namespace vf
 	public:
 		virtual void do_v() override final;
 		//
-		__declspec(noinline) void do_s();
+		void do_s();
 		//
 		void do_i()
 		{

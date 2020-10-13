@@ -33,10 +33,10 @@ void do_test(T f, const std::string_view s, unsigned long long n, std::ostream& 
 int main(int argc, char** argv)
 {
 	auto t = vf::test {};
-	const auto n = 100000000ull;
+	const auto n = 1000000000ull;
 	//
-	do_test(std::bind(&vf::test::do_v, t), "virtual", n);
 	do_test(std::bind(&vf::test::do_s, t), "plain", n);
+	do_test(std::bind(&vf::test::do_v, t), "virtual", n);
 	do_test(std::bind(&vf::test::do_i, t), "inline", n);
 	//
 	return 0;
